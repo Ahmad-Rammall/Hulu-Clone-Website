@@ -178,7 +178,7 @@ body {
 /* HULU SECTIONS */
 .hulu-sections {
   margin-top: 100px;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   text-align: center;
 }
@@ -268,5 +268,56 @@ body {
 .hulu-sections-bottom a{
   color: #cececf;
 }
+
+/* Event Section */
+
+.events-section{
+  height: 140vh;
+  margin-top: 5%;
+  background-image: url('../assets/images/sports-bg.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.events{
+  width: 50%;
+  padding-top: 15%;
+}
+
+.events-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-size: 12px;
+  font-weight: bold;
+  gap: 50px;
+}
+
+.event-desc{
+  margin: 100px 0 0 130px;
+  width: 70%;
+}
+
+.event-desc h1{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.first-event{
+  text-decoration: underline;
+  text-decoration-thickness: 7px;
+}
+
+.events-list li:hover{
+  cursor: pointer;
+  color: rgb(100, 99, 99);
+}
+
+.sec-event{
+  color: gray;
+}
+
+
 
 
