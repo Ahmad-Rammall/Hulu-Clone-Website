@@ -1,14 +1,16 @@
 * {
-  border: 0;
+  border: none;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Graphik Web", "Graphik", sans-serif;
 }
 
-body{
-    background-color: #000;
-    width: 100%;
+body {
+  background-color: #000;
+  width: 100%;
+  overflow-x: hidden;
+  color: white;
 }
 
 /* HEADER */
@@ -137,7 +139,7 @@ body{
 /* BOTTOM HEADER */
 
 .bottom-header {
-    background: linear-gradient(
+  background: linear-gradient(
     rgba(65, 43, 43, 0.397) 0%,
     rgba(0, 0, 0, 0.555) 50%,
     rgba(0, 0, 0, 0.986) 98%,
@@ -151,33 +153,120 @@ body{
   align-items: center;
 }
 
-.bottom-header-quote{
-    color: #fff3c9;
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin: 40px 0 20px 0;
+.bottom-header-quote {
+  color: #fff3c9;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 40px 0 20px 0;
 }
 
-.bottom-header-btn{
-    background-color: transparent;
-    border: 1px solid white;
-    padding: 15px;
-    color: #fff3c9;
-    border-radius: 3px;
-    width: 20%;
-
+.bottom-header-btn {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 15px;
+  color: #fff3c9;
+  border-radius: 3px;
+  width: 20%;
 }
 
-.bottom-header-btn:hover{
-    cursor: pointer;
-    background-color: gray;
-    border: none;
+.bottom-header-btn:hover {
+  cursor: pointer;
+  background-color: gray;
+  border: none;
 }
 
 /* HULU SECTIONS */
-.hulu-sections{
-    margin-top: 100px;
-    height: 100vh;
-    width: 100vw;
-    text-align: center;
+.hulu-sections {
+  margin-top: 100px;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
 }
+
+.hulu-sections h2{
+  color: white;
+  font-size: 50px;
+}
+
+.description{
+  color: white;
+  margin: 20px auto;
+  width: 100%;
+  font-size: 16px;
+}
+
+.sections-cards{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 60px;
+}
+
+.sections-card{
+  height: 400px;
+  width: 300px;
+  background-color: #14e98e;
+  border-radius: 10px;
+  text-align: left;
+  padding: 10px;
+  background: linear-gradient(
+    rgba(65, 43, 43, 0.671) 0%,
+    rgba(0, 0, 0, 0.555) 50%,
+    rgba(0, 0, 0, 0.986) 98%,
+    #000 100%
+  );
+  background-size: cover;
+  border: 5px transparent solid;
+
+}
+
+.sections-card:hover{
+  cursor: pointer;
+  border: 5px gray solid;
+ }
+
+.card-1{
+  background-image: url('../assets/images/family-guy.png');
+}
+
+.card-2{
+  background-image: url('../assets/images/prey.jpeg');
+}
+
+.card-3{
+  background-image: url('../assets/images/only-murders-in-the-building.png');
+}
+
+.card-4{
+  background-image: url('../assets/images/the-sopranos.png');
+}
+
+.sections-card-desc{
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+.sections-card-title{
+  font-size: 20px;
+}
+
+.hulu-sections-bottom-btn{
+  background-color: #14e98e;
+  padding: 10px;
+  margin: 0 20px 20px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.light{
+  font-size: 10px;
+  margin-bottom: 30px;
+  color: #cececf;
+}
+
+.hulu-sections-bottom a{
+  color: #cececf;
+}
+
+
