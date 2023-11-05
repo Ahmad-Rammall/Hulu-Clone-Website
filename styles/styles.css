@@ -51,13 +51,14 @@ body {
   background-color: transparent;
   font-size: 17px;
   width: 100px;
+  padding: 10px;
 }
 
 .login-btn:hover {
   cursor: pointer;
   background-color: gray;
   border-radius: 5px;
-}
+  transition: all 0.4s ease-in-out;}
 
 /* CARDS */
 
@@ -114,10 +115,16 @@ body {
 
 .bundle-card-btn {
   background-color: #1ce783;
+  cursor: pointer;
   width: 100%;
   height: 40px;
   border-radius: 7px;
   font-weight: bold;
+}
+
+.bundle-card-btn:hover{
+  background-color: #1ce78185;
+  transition: all 0.2s ease-in-out;  
 }
 
 .header-tags-container {
@@ -140,7 +147,7 @@ body {
 
 .bottom-header {
   background: linear-gradient(
-    rgba(65, 43, 43, 0.397) 0%,
+    rgba(0, 0, 0, 0.24) 0%,
     rgba(0, 0, 0, 0.555) 50%,
     rgba(0, 0, 0, 0.986) 98%,
     #000 100%
@@ -162,7 +169,8 @@ body {
 
 .bottom-header-btn {
   background-color: transparent;
-  border: 1px solid white;
+  border: 2px solid white;
+  font-weight: bold;
   padding: 15px;
   color: #fff3c9;
   border-radius: 3px;
@@ -173,6 +181,7 @@ body {
   cursor: pointer;
   background-color: gray;
   border: none;
+  transition: all 0.2s ease-in-out;
 }
 
 /* HULU SECTIONS */
@@ -189,10 +198,12 @@ body {
 }
 
 .description{
-  color: white;
+  color: #f7f7f7;
   margin: 20px auto;
   width: 100%;
   font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
 }
 
 .sections-cards{
@@ -206,19 +217,11 @@ body {
 .sections-card{
   height: 400px;
   width: 300px;
-  background-color: #14e98e;
   border-radius: 10px;
   text-align: left;
   padding: 10px;
-  background: linear-gradient(
-    rgba(65, 43, 43, 0.671) 0%,
-    rgba(0, 0, 0, 0.555) 50%,
-    rgba(0, 0, 0, 0.986) 98%,
-    #000 100%
-  );
   background-size: cover;
   border: 5px transparent solid;
-
 }
 
 .sections-card:hover{
@@ -251,16 +254,28 @@ body {
   font-size: 20px;
 }
 
+.center-section{
+  width: 50%;
+  margin: auto;
+}
+
 .hulu-sections-bottom-btn{
   background-color: #14e98e;
+  cursor: pointer;
   padding: 10px;
   margin: 0 20px 20px 20px;
   border-radius: 5px;
   font-weight: bold;
 }
 
+.hulu-sections-bottom-btn:hover{
+  background-color: #1ce78194;
+  transition: all 0.2s ease-in-out;
+}
+
 .light{
   font-size: 10px;
+  font-weight: 300;
   margin-bottom: 30px;
   color: #cececf;
 }
@@ -347,9 +362,6 @@ td{
   text-align: left;
 }
 
-.most-popular{
-}
-
 .most-popular-btn{
   background-color: #14e98e;
   padding: 10px;
@@ -370,6 +382,13 @@ td{
 
 .subscribe-btn:hover{
   background-color: #cececf;
+  transition: all 0.2s ease-in-out;
+}
+
+.ads{
+  font-size: 15px;
+  font-weight: bold;
+  margin: 5px;
 }
 
 .add-ons{
